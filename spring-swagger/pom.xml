@@ -63,5 +63,19 @@
 			</plugin>
 		</plugins>
 	</build>
-
+ <profiles>
+        <profile>
+            <id>development</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            
+                        <configuration>
+                            <profiles>
+                                <profile>development</profile>
+                            </profiles>
+                        </configuration>
+                    
+        </profile>
+    <profiles>
 </project>
