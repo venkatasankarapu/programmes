@@ -16,8 +16,8 @@ WORKDIR /build/
 RUN mvn package
 FROM openjdk:8-jre-alpine
 WORKDIR /app
-COPY --from=MAVEN_BUILD /build/target/docker-boot-intro-0.1.0.jar /app/
-ENTRYPOINT ["java", "-jar", "docker-boot-intro-0.1.0.jar"]
+COPY --from=MAVEN_BUILD /build/target/spring-swagger-0.0.1-SNAPSHOT.jar /app/
+ENTRYPOINT ["java", "-jar", "spring-swagger-0.0.1-SNAPSHOT.jar"]
 
 
 
